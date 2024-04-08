@@ -15,6 +15,7 @@ class CustomWidget : public QWidget {
         Q_OBJECT
 public:
         explicit CustomWidget(QWidget *parent = 0, QList<Shellcode> shellcodes = {});
+        ~CustomWidget();
 private slots:
         void itemClicked(QListWidgetItem *item);
         void updateItem();

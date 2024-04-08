@@ -87,3 +87,14 @@ void CustomWidget::updateItem() {
                 item->setText(m_edit->text());
         }
 }
+
+CustomWidget::~CustomWidget() {
+        free(layout);
+        free(m_widget);
+        free(m_code);
+        free(m_stacked);
+        free(m_edit);
+        free(m_button);
+        free(m_savebutton);
+        free(m_backbutton);
+}
